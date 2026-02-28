@@ -3,9 +3,9 @@ export const SITE = {
   tagline: "HIPAA-Compliant Medical Courier Services Across Montana",
   description:
     "Professional, reliable, and fully HIPAA-compliant medical courier services serving healthcare facilities throughout Montana. Specimens, pharmaceuticals, medical records, and equipment — delivered safely and on time.",
-  phone: "(406) 555-0199",
+  phone: "(512) 537-3417",
   email: "contact@montmedicalcourier.com",
-  address: "123 Main Street, Helena, MT 59601",
+  address: "1901 Veterans Memorial Dr, Temple, TX 76504",
   url: "https://montmedicalcourier.com",
 } as const;
 

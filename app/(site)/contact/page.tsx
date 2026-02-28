@@ -25,9 +25,9 @@ export default function ContactPage() {
         </div>
       </Section>
 
-      {/* Quick-reference contact cards */}
+      {/* Quick-reference contact info */}
       <Section>
-        <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {[
             {
               icon: Phone,
@@ -56,23 +56,21 @@ export default function ContactPage() {
           ].map((item) => (
             <div
               key={item.label}
-              className="flex flex-col items-center rounded-xl border border-gray-200 bg-surface p-5 text-center shadow-sm"
+              className="flex flex-col items-center text-center"
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-light text-primary">
-                <item.icon className="h-5 w-5" />
-              </div>
-              <h3 className="mt-3 text-sm font-semibold uppercase tracking-wider text-slate">
+              <item.icon className="h-6 w-6 text-primary" />
+              <h3 className="mt-3 text-sm font-semibold uppercase tracking-wide text-slate">
                 {item.label}
               </h3>
               {item.href ? (
                 <a
                   href={item.href}
-                  className="mt-1 text-sm font-medium text-charcoal"
+                  className="mt-1 text-lg font-semibold text-charcoal hover:text-primary transition-colors"
                 >
                   {item.value}
                 </a>
               ) : (
-                <p className="mt-1 text-sm font-medium text-charcoal">
+                <p className="mt-1 text-lg font-semibold text-charcoal">
                   {item.value}
                 </p>
               )}
