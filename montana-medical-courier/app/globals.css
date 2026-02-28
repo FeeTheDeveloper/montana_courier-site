@@ -40,3 +40,45 @@
     @apply outline-none ring-2 ring-primary/50 ring-offset-2 ring-offset-surface;
   }
 }
+
+/* ── Splash-screen animations ────────────────────────────── */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.88);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOutOpacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes contentReveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-scale {
+  animation: fadeInScale 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-out {
+  animation: fadeOutOpacity 0.7s cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+
+.animate-content-reveal {
+  animation: contentReveal 0.6s ease-out forwards;
+}

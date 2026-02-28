@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
+import { SplashScreen } from "@/components/site/SplashScreen";
 import { SITE } from "@/lib/constants";
 import "../globals.css";
 
@@ -32,6 +33,7 @@ export default function SiteLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className="flex min-h-screen flex-col">
+        <SplashScreen />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
