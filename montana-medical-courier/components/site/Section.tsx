@@ -14,7 +14,7 @@ export function Section({ children, className, id, dark }: SectionProps) {
       id={id}
       className={cn(
         "py-16 md:py-24",
-        dark ? "bg-brand-800 text-white" : "bg-white",
+        dark ? "bg-charcoal text-white" : "bg-surface",
         className,
       )}
     >

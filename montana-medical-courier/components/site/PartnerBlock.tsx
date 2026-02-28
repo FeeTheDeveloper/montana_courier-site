@@ -15,21 +15,21 @@ export function PartnerBlock() {
             long-term care facility, we build custom courier programs that
             integrate seamlessly with your operations.
           </p>
-          <ul className="mt-6 space-y-3 text-gray-700">
+          <ul className="mt-6 space-y-3 text-slate">
             <li className="flex items-start gap-2">
-              <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-brand-500" />
+              <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" />
               Dedicated account management
             </li>
             <li className="flex items-start gap-2">
-              <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-brand-500" />
+              <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" />
               Customizable pickup &amp; delivery schedules
             </li>
             <li className="flex items-start gap-2">
-              <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-brand-500" />
+              <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" />
               Volume-based pricing
             </li>
             <li className="flex items-start gap-2">
-              <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-brand-500" />
+              <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" />
               Real-time tracking dashboard
             </li>
           </ul>
@@ -44,8 +44,8 @@ export function PartnerBlock() {
         </div>
 
         {/* Illustration placeholder */}
-        <div className="flex items-center justify-center rounded-2xl bg-brand-50 p-12">
-          <Handshake className="h-32 w-32 text-brand-300" />
+        <div className="flex items-center justify-center rounded-2xl bg-primary-light p-12">
+          <Handshake className="h-32 w-32 text-primary/40" />
         </div>
       </div>
     </Section>

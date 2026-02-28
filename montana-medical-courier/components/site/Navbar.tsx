@@ -15,7 +15,7 @@ export function Navbar() {
         {/* Logo / Brand */}
         <Link href="/" className="flex items-center gap-2">
           <img src="/logo.png" alt={SITE.name} className="h-9 w-auto" />
-          <span className="hidden text-lg font-bold text-brand-800 sm:inline">
+          <span className="hidden text-lg font-bold text-charcoal sm:inline">
             {SITE.name}
           </span>
         </Link>
@@ -26,7 +26,7 @@ export function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-brand-50 hover:text-brand-600"
+                className="rounded-md px-3 py-2 text-sm font-medium text-slate transition hover:bg-primary-light hover:text-primary"
               >
                 {link.label}
               </Link>
@@ -60,7 +60,7 @@ export function Navbar() {
                 <Link
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition hover:bg-brand-50"
+                  className="block rounded-md px-3 py-2 text-base font-medium text-slate transition hover:bg-primary-light hover:text-primary"
                 >
                   {link.label}
                 </Link>

@@ -4,7 +4,7 @@ import { NAV_LINKS, SITE } from "@/lib/constants";
 
 export function Footer() {
   return (
-    <footer className="border-t border-gray-200 bg-brand-900 text-gray-300">
+    <footer className="border-t border-charcoal bg-charcoal text-gray-300">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-3">
           {/* Column 1 – Brand */}

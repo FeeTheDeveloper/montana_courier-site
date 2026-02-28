@@ -16,7 +16,7 @@ export function TrustBar() {
             key={item.label}
             className="flex items-center gap-2 text-sm font-medium text-gray-600"
           >
-            <item.icon className="h-5 w-5 text-brand-500" />
+            <item.icon className="h-5 w-5 text-primary" />
             {item.label}
           </span>
         ))}

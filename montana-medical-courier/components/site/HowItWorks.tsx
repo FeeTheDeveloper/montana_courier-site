@@ -16,7 +16,7 @@ export function HowItWorks() {
       <div className="mt-12 grid gap-10 sm:grid-cols-3">
         {HOW_IT_WORKS.map((item) => (
           <div key={item.step} className="text-center">
-            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-500 text-xl font-bold text-white">
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary text-xl font-bold text-white">
               {item.step}
             </div>
             <h3 className="mt-4 text-lg font-semibold text-gray-900">

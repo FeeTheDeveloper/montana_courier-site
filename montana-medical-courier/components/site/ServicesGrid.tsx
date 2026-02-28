@@ -42,7 +42,7 @@ export function ServicesGrid() {
               className="group transition hover:shadow-md"
             >
               <CardHeader>
-                <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-brand-50 text-brand-500 transition group-hover:bg-brand-500 group-hover:text-white">
+                <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-primary-light text-primary transition group-hover:bg-primary group-hover:text-white">
                   {Icon && <Icon className="h-6 w-6" />}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900">

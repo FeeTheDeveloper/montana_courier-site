@@ -2,10 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
+/*
+ * Design-system palette
+ * Primary Red  #CD0812
+ * Charcoal     #1B1C1E
+ * Slate        #51555A
+ * Cool Gray    #EEF0F4
+ * White        #FFFFFF
+ */
 
-body {
-  @apply bg-white text-gray-900 antialiased;
+@layer base {
+  :root {
+    --color-primary: 205 8 18;        /* #CD0812 */
+    --color-primary-hover: 163 6 14;  /* darker red for hover */
+    --color-primary-light: 252 232 233; /* very light tint for bg */
+    --color-charcoal: 27 28 30;       /* #1B1C1E */
+    --color-slate: 81 85 90;          /* #51555A */
+    --color-cool-gray: 238 240 244;   /* #EEF0F4 */
+    --color-surface: 255 255 255;     /* #FFFFFF */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cool-gray text-charcoal antialiased;
+  }
+
+  /* Default link styling */
+  a {
+    @apply text-primary transition-colors hover:text-primary-hover;
+  }
+
+  /* Accessible focus ring for all interactive elements */
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary/50 ring-offset-2 ring-offset-surface;
+  }
 }

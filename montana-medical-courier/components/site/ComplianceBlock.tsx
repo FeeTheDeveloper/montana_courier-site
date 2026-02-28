@@ -9,7 +9,7 @@ export function ComplianceBlock() {
         <h2 className="text-3xl font-bold sm:text-4xl">
           Compliance &amp; Certifications
         </h2>
-        <p className="mx-auto mt-3 max-w-2xl text-lg text-blue-200">
+        <p className="mx-auto mt-3 max-w-2xl text-lg text-gray-300">
           Your patients&apos; safety and privacy are our top priority.
         </p>
       </div>
@@ -17,10 +17,10 @@ export function ComplianceBlock() {
       <div className="mt-12 grid gap-8 sm:grid-cols-2">
         {COMPLIANCE_ITEMS.map((item) => (
           <div key={item.title} className="flex gap-4">
-            <ShieldCheck className="mt-1 h-6 w-6 shrink-0 text-blue-300" />
+            <ShieldCheck className="mt-1 h-6 w-6 shrink-0 text-primary" />
             <div>
               <h3 className="text-lg font-semibold">{item.title}</h3>
-              <p className="mt-1 text-blue-200">{item.description}</p>
+              <p className="mt-1 text-gray-300">{item.description}</p>
             </div>
           </div>
         ))}

@@ -8,21 +8,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brand: {
-          50: "#eff6ff",
-          100: "#dbeafe",
-          200: "#bfdbfe",
-          300: "#93c5fd",
-          400: "#60a5fa",
-          500: "#1e40af",
-          600: "#1e3a8a",
-          700: "#1e3370",
-          800: "#172554",
-          900: "#0f172a",
+        /* Semantic tokens backed by CSS variables (set in globals.css) */
+        primary: {
+          DEFAULT: "rgb(var(--color-primary) / <alpha-value>)",
+          hover: "rgb(var(--color-primary-hover) / <alpha-value>)",
+          light: "rgb(var(--color-primary-light) / <alpha-value>)",
         },
-        accent: {
-          DEFAULT: "#dc2626",
-          light: "#ef4444",
+        charcoal: {
+          DEFAULT: "rgb(var(--color-charcoal) / <alpha-value>)",
+        },
+        slate: {
+          DEFAULT: "rgb(var(--color-slate) / <alpha-value>)",
+        },
+        "cool-gray": {
+          DEFAULT: "rgb(var(--color-cool-gray) / <alpha-value>)",
+        },
+        surface: {
+          DEFAULT: "rgb(var(--color-surface) / <alpha-value>)",
         },
       },
       fontFamily: {
